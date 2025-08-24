@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sheraz Hussain - Software Engineer Portfolio</title>
+    <!-- Updated Title for SEO -->
+    <title>Sheraz Hussain | Software & Cloud Engineer Portfolio | AI & DevOps</title>
+    
+    <!-- Meta Description for Search Engine Snippets -->
+    <meta name="description" content="Sheraz Hussain is a First-Class Honours Computing graduate and a skilled Software & Cloud Engineer. Explore his portfolio featuring AI-powered applications, full-stack projects, and expertise in Python, AWS, GCP, and DevOps practices.">
+    
+    <!-- Keywords for Search Engine Context -->
+    <meta name="keywords" content="Sheraz Hussain, Software Engineer, Cloud Engineer, DevOps, AI, Machine Learning, Python, AWS, GCP, Full-Stack, Web Development, portfolio, developer, Dublin, Ireland, software engineering graduate, AWS certified, GCP certified, React, Node.js">
+    
+    <!-- Open Graph Meta Tags for Social Media Sharing (LinkedIn, Facebook, etc.) -->
+    <meta property="og:title" content="Sheraz Hussain | Software & Cloud Engineer Portfolio">
+    <meta property="og:description" content="Explore the portfolio of Sheraz Hussain, a graduate Software & Cloud Engineer specializing in AI-driven solutions, full-stack development, and modern DevOps practices.">
+    <meta property="og:image" content="https://placehold.co/1200x630/64FFDA/0A192F?text=Sheraz+Hussain+Portfolio">
+    <meta property="og:url" content="[Your Portfolio URL Here]">
+    <meta property="og:type" content="website">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4C+F/D7v5+6jI9qD1p0Hh6D2x7v5Qv7h+Tz4P8Kz8z8/T5n5B5+R2b+e4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Light Theme Color Palette: Off-white, Dark Gray & Vibrant Yellow -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-            color: #1e293b;
+            background-color: #0A192F; /* Dark Navy */
+            color: #E6F1FF; /* Light Off-white */
             scroll-behavior: smooth;
         }
         .chart-container {
@@ -33,7 +47,7 @@
             transition: color 0.3s;
         }
         .nav-link:hover {
-            color: #facc15;
+            color: #64FFDA; /* Vibrant Teal */
         }
         .animated-section {
             transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -46,7 +60,7 @@
         }
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
         }
         .timeline-line {
             position: absolute;
@@ -54,70 +68,104 @@
             top: 0;
             bottom: 0;
             width: 4px;
-            background-color: #e2e8f0;
+            background-color: #122B4D; /* Darker Navy */
         }
         .timeline-line-fill {
             height: 0;
             width: 4px;
-            background-color: #facc15; /* Changed from blue-500 */
+            background-color: #64FFDA; /* Vibrant Teal */
             transition: height 1s ease-out;
+        }
+        .text-teal {
+            color: #64FFDA;
+        }
+        .bg-teal {
+            background-color: #64FFDA;
+        }
+        .hover-bg-teal-dark:hover {
+            background-color: #48C3AE; /* Darker Teal */
+        }
+        .border-teal {
+            border-color: #64FFDA;
+        }
+        .btn-teal {
+            background-color: #122B4D;
+            border-color: #64FFDA;
+            color: #64FFDA;
+            transition: all 0.3s;
+        }
+        .btn-teal:hover {
+            background-color: #64FFDA;
+            color: #0A192F;
         }
     </style>
 </head>
 <body class="antialiased">
-    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+    <header class="bg-[#0A192F]/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-slate-900">Sheraz Hussain</a>
+            <a href="#" class="text-2xl font-bold text-[#E6F1FF]">Sheraz Hussain</a>
             <div class="hidden md:flex space-x-8">
-                <a href="#skills" class="nav-link text-slate-600 hover:text-yellow-400">Skills</a>
-                <a href="#projects" class="nav-link text-slate-600 hover:text-yellow-400">Projects</a>
-                <a href="#technical-experience" class="nav-link text-slate-600 hover:text-yellow-400">Technical Experience</a>
-                <a href="#other-experience" class="nav-link text-slate-600 hover:text-yellow-400">Other Experience</a>
-                <a href="#education" class="nav-link text-slate-600 hover:text-yellow-400">Education</a>
-                <a href="#contact" class="nav-link text-slate-600 hover:text-yellow-400">Contact</a>
-                <a href="#ai-tools" class="nav-link text-slate-600 hover:text-yellow-400">AI Tools</a>
+                <a href="#skills" class="nav-link text-[#C9D1D9] hover:text-teal">Skills</a>
+                <a href="#projects" class="nav-link text-[#C9D1D9] hover:text-teal">Projects</a>
+                <a href="#technical-experience" class="nav-link text-[#C9D1D9] hover:text-teal">Technical Experience</a>
+                <a href="#other-experience" class="nav-link text-[#C9D1D9] hover:text-teal">Other Experience</a>
+                <a href="#education" class="nav-link text-[#C9D1D9] hover:text-teal">Education</a>
+                <a href="#contact" class="nav-link text-[#C9D1D9] hover:text-teal">Contact</a>
             </div>
-            <button id="mobile-menu-button" class="md:hidden text-slate-900 focus:outline-none">
+            <button id="mobile-menu-button" class="md:hidden text-[#E6F1FF] focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
-        <div id="mobile-menu" class="hidden md:hidden transition-all duration-300">
-            <a href="#skills" class="block py-2 px-6 text-slate-600 hover:bg-slate-100">Skills</a>
-            <a href="#projects" class="block py-2 px-6 text-slate-600 hover:bg-slate-100">Projects</a>
-            <a href="#technical-experience" class="block py-2 px-6 text-slate-600 hover:bg-slate-100">Technical Experience</a>
-            <a href="#other-experience" class="block py-2 px-6 text-slate-600 hover:bg-slate-100">Other Experience</a>
-            <a href="#education" class="block py-2 px-6 text-slate-600 hover:bg-slate-100">Education</a>
-            <a href="#contact" class="block py-2 px-6 text-slate-600 hover:bg-slate-100">Contact</a>
-            <a href="#ai-tools" class="block py-2 px-6 text-slate-600 hover:bg-slate-100">AI Tools</a>
+        <div id="mobile-menu" class="hidden md:hidden transition-all duration-300 bg-[#0A192F]/80">
+            <a href="#skills" class="block py-2 px-6 text-[#C9D1D9] hover:bg-[#122B4D]">Skills</a>
+            <a href="#projects" class="block py-2 px-6 text-[#C9D1D9] hover:bg-[#122B4D]">Projects</a>
+            <a href="#technical-experience" class="block py-2 px-6 text-[#C9D1D9] hover:bg-[#122B4D]">Technical Experience</a>
+            <a href="#other-experience" class="block py-2 px-6 text-[#C9D1D9] hover:bg-[#122B4D]">Other Experience</a>
+            <a href="#education" class="block py-2 px-6 text-[#C9D1D9] hover:bg-[#122B4D]">Education</a>
+            <a href="#contact" class="block py-2 px-6 text-[#C9D1D9] hover:bg-[#122B4D]">Contact</a>
         </div>
     </header>
 
     <main class="container mx-auto px-6 py-12">
         <section id="hero" class="text-center mb-24 animated-section">
-            <h1 class="text-5xl md:text-6xl font-bold text-slate-900 mb-4">Software & Cloud Engineer</h1>
-            <p id="summary-text" class="text-xl text-slate-600 max-w-3xl mx-auto mb-4">
+            <h1 class="text-5xl md:text-6xl font-bold text-[#E6F1FF] mb-4">Software & Cloud Engineer</h1>
+            <p id="summary-text" class="text-xl text-[#C9D1D9] max-w-3xl mx-auto mb-4">
                 Highly motivated and results-driven First-Class Honors Computing graduate with a robust skill set spanning full-stack development (Angular, React, Node.js), cloud architecture (AWS, GCP), and modern DevOps practices (Docker, CI/CD). I have a proven track record of designing, developing, and deploying innovative, scalable solutions. A key accomplishment includes building an AI-powered job application tool that successfully delivered 90%+ ATS match rates for university peers. Eager to contribute technical expertise and a collaborative spirit to a dynamic team in a graduate Software, Cloud, or DevOps Engineering role.
             </p>
-            <button id="critique-summary-btn" class="inline-block bg-yellow-400 text-slate-900 py-2 px-4 rounded-lg font-bold hover:bg-yellow-500 transition-colors duration-300 shadow-md mb-8">
-                ✨ Critique my Summary
-            </button>
-            <div class="flex justify-center space-x-6">
-                <a href="https://linkedin.com/in/sherazhussain546/" target="_blank" class="text-slate-400 hover:text-yellow-400 transition-colors duration-300">
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="https://linkedin.com/in/sherazhussain546/" target="_blank" class="text-[#C9D1D9] hover:text-teal transition-colors duration-300">
                     <i class="fab fa-linkedin-in text-2xl"></i>
                 </a>
-                <a href="https://github.com/SherazHussain546" target="_blank" class="text-slate-400 hover:text-yellow-400 transition-colors duration-300">
+                <a href="https://github.com/SherazHussain546" target="_blank" class="text-[#C9D1D9] hover:text-teal transition-colors duration-300">
                     <i class="fab fa-github text-2xl"></i>
                 </a>
-                <a href="https://sheraz546.wixstudio.io/sherazeportfolio" target="_blank" class="text-slate-400 hover:text-yellow-400 transition-colors duration-300">
+                <a href="https://sheraz546.wixstudio.io/sherazeportfolio" target="_blank" class="text-[#C9D1D9] hover:text-teal transition-colors duration-300">
                     <i class="fas fa-globe text-2xl"></i>
                 </a>
+                <button id="critique-btn" class="btn-teal px-6 py-3 rounded-full font-bold transition-all duration-300 border">
+                    Get an AI Resume Critique ✨
+                </button>
+            </div>
+        </section>
+
+        <section id="ai-critique" class="mb-24 animated-section hidden">
+            <h2 class="text-4xl font-bold text-center mb-6">AI Critique</h2>
+            <div class="max-w-4xl mx-auto p-6 bg-[#122B4D] rounded-lg shadow-lg">
+                <p id="critique-output" class="text-[#C9D1D9] whitespace-pre-wrap"></p>
+            </div>
+            <div id="loading-indicator-critique" class="text-center mt-6 hidden">
+                <p class="text-teal font-medium">Generating critique...</p>
+                <div class="w-16 h-16 border-4 border-t-4 border-teal border-[#C9D1D9] rounded-full animate-spin mx-auto mt-4"></div>
+            </div>
+            <div id="error-message-critique" class="text-center mt-6 text-red-500 hidden">
+                <p>Failed to generate critique. Please try again.</p>
             </div>
         </section>
 
         <section id="skills" class="mb-24 animated-section">
             <h2 class="text-4xl font-bold text-center mb-12">Technical Skills</h2>
             <div class="text-center mb-8">
-                <p class="text-lg text-slate-600">This chart provides a high-level overview of my core competencies. Use the filters below to explore specific technologies.</p>
+                <p class="text-lg text-[#C9D1D9]">This chart provides a high-level overview of my core competencies. Use the filters below to explore specific technologies.</p>
             </div>
             <div class="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-12">
                 <div class="chart-container mb-12 lg:mb-0">
@@ -125,17 +173,17 @@
                 </div>
                 <div class="w-full lg:w-2/3">
                     <div id="skill-filters" class="flex flex-wrap justify-center lg:justify-start gap-2 mb-8">
-                        <button class="skill-filter-btn bg-yellow-400 text-slate-900 px-4 py-2 rounded-full" data-category="all">All</button>
-                        <button class="skill-filter-btn bg-slate-200 text-slate-700 px-4 py-2 rounded-full" data-category="Programming">Programming</button>
-                        <button class="skill-filter-btn bg-slate-200 text-slate-700 px-4 py-2 rounded-full" data-category="Frameworks">Frameworks</button>
-                        <button class="skill-filter-btn bg-slate-200 text-slate-700 px-4 py-2 rounded-full" data-category="Cloud & DevOps">Cloud & DevOps</button>
-                        <button class="skill-filter-btn bg-slate-200 text-slate-700 px-4 py-2 rounded-full" data-category="AI & ML">AI & ML</button>
-                        <button class="skill-filter-btn bg-slate-200 text-slate-700 px-4 py-2 rounded-full" data-category="Databases">Databases</button>
-                        <button class="skill-filter-btn bg-slate-200 text-slate-700 px-4 py-2 rounded-full" data-category="Web & Mobile">Web & Mobile</button>
-                        <button class="skill-filter-btn bg-slate-200 text-slate-700 px-4 py-2 rounded-full" data-category="Security & Compliance">Security & Compliance</button>
-                        <button class="skill-filter-btn bg-slate-200 text-slate-700 px-4 py-2 rounded-full" data-category="Software Development">Software Development</button>
-                        <button class="skill-filter-btn bg-slate-200 text-slate-700 px-4 py-2 rounded-full" data-category="E-Commerce & Web Development">E-Commerce & Web Development</button>
-                        <button class="skill-filter-btn bg-slate-200 text-slate-700 px-4 py-2 rounded-full" data-category="Soft Skills">Soft Skills</button>
+                        <button class="skill-filter-btn bg-teal text-white px-4 py-2 rounded-full" data-category="all">All</button>
+                        <button class="skill-filter-btn bg-[#122B4D] text-[#C9D1D9] px-4 py-2 rounded-full" data-category="Programming">Programming</button>
+                        <button class="skill-filter-btn bg-[#122B4D] text-[#C9D1D9] px-4 py-2 rounded-full" data-category="Frameworks">Frameworks</button>
+                        <button class="skill-filter-btn bg-[#122B4D] text-[#C9D1D9] px-4 py-2 rounded-full" data-category="Cloud & DevOps">Cloud & DevOps</button>
+                        <button class="skill-filter-btn bg-[#122B4D] text-[#C9D1D9] px-4 py-2 rounded-full" data-category="AI & ML">AI & ML</button>
+                        <button class="skill-filter-btn bg-[#122B4D] text-[#C9D1D9] px-4 py-2 rounded-full" data-category="Databases">Databases</button>
+                        <button class="skill-filter-btn bg-[#122B4D] text-[#C9D1D9] px-4 py-2 rounded-full" data-category="Web & Mobile">Web & Mobile</button>
+                        <button class="skill-filter-btn bg-[#122B4D] text-[#C9D1D9] px-4 py-2 rounded-full" data-category="Security & Compliance">Security & Compliance</button>
+                        <button class="skill-filter-btn bg-[#122B4D] text-[#C9D1D9] px-4 py-2 rounded-full" data-category="Software Development">Software Development</button>
+                        <button class="skill-filter-btn bg-[#122B4D] text-[#C9D1D9] px-4 py-2 rounded-full" data-category="E-Commerce & Web Development">E-Commerce & Web Development</button>
+                        <button class="skill-filter-btn bg-[#122B4D] text-[#C9D1D9] px-4 py-2 rounded-full" data-category="Soft Skills">Soft Skills</button>
                     </div>
                     <div id="skills-grid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-4 text-center">
                     </div>
@@ -146,71 +194,83 @@
         <section id="projects" class="mb-24 animated-section">
             <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
             <div class="text-center mb-8">
-                 <p class="text-lg text-slate-600">Here are some of the key projects I've developed, showcasing my ability to build practical, impactful applications.</p>
+                 <p class="text-lg text-[#C9D1D9]">Here are some of the key projects I've developed, showcasing my ability to build practical, impactful applications.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-                <!-- Project cards -->
-                <a href="https://github.com/SherazHussain546/Market-Genius" target="_blank" class="project-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 block">
+                <a href="https://github.com/SherazHussain546/Market-Genius" target="_blank" class="project-card bg-[#122B4D] rounded-lg shadow-lg overflow-hidden transition-all duration-300 block border border-transparent hover:border-teal">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2">Market Genius - An AI-Powered Financial Signal Platform</h3>
-                        <p class="text-slate-600 mb-4">An AI-powered stock and crypto analysis platform delivering real-time buy/sell/hold signals with AI-generated summaries. Built with Next.js, TypeScript, Tailwind CSS, and integrated with Google Genkit, Firebase, and market data APIs. Features include advanced asset search, mobile QR access, push notifications, and a modern responsive UI.</p>
+                        <p class="text-[#C9D1D9] mb-4">An AI-powered stock and crypto analysis platform delivering real-time buy/sell/hold signals with AI-generated summaries. Built with Next.js, TypeScript, Tailwind CSS, and integrated with Google Genkit, Firebase, and market data APIs. Features include advanced asset search, mobile QR access, push notifications, and a modern responsive UI.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Next.js</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">TypeScript</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">TailwindCSS</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Google Genkit</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Crypto.com API</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Alpha Vantage API</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Gemini API</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Next.js</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">TypeScript</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">TailwindCSS</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Google Genkit</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Crypto.com API</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Alpha Vantage API</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Gemini API</span>
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/SherazHussain546/Job4You" target="_blank" class="project-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 block">
+                <a href="https://github.com/SherazHussain546/Job4You" target="_blank" class="project-card bg-[#122B4D] rounded-lg shadow-lg overflow-hidden transition-all duration-300 block border border-transparent hover:border-teal">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2">Job4You – Your Personal AI Recruiter</h3>
-                        <p class="text-slate-600 mb-4">An automated job-application assistant with Python and GPT-4, successfully processing over 100 simulated job applications for university peers, delivering 90%+ ATS match rates.</p>
+                        <p class="text-[#C9D1D9] mb-4">An automated job-application assistant with Python and GPT-4, successfully processing over 100 simulated job applications for university peers, delivering 90%+ ATS match rates.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Angular</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">GPT-4</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">scikit-learn</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Angular</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">GPT-4</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">scikit-learn</span>
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/SherazHussain546/ChattyAI" target="_blank" class="project-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 block">
+                <a href="https://github.com/SherazHussain546/ChattyAI" target="_blank" class="project-card bg-[#122B4D] rounded-lg shadow-lg overflow-hidden transition-all duration-300 block border border-transparent hover:border-teal">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2">ChattyAI - A Conversational AI Assistant</h3>
-                        <p class="text-slate-600 mb-4">Architected and built a cross-platform AI chatbot leveraging the Gemini API, Angular, Ionic, and Firebase, achieving sub-second response times and facilitating over 200 daily interactions for 50+ unique students.</p>
+                        <p class="text-[#C9D1D9] mb-4">Architected and built a cross-platform AI chatbot leveraging the Gemini API, Angular, Ionic, and Firebase, achieving sub-second response times and facilitating over 200 daily interactions for 50+ unique students.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Ionic</span>
-                             <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Gemini API</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">TypeScript</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Ionic</span>
+                             <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Gemini API</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">TypeScript</span>
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/SherazHussain546/GCP_VM_Deployement" target="_blank" class="project-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 block">
+                <a href="https://github.com/SherazHussain546/GCP_VM_Deployement" target="_blank" class="project-card bg-[#122B4D] rounded-lg shadow-lg overflow-hidden transition-all duration-300 block border border-transparent hover:border-teal">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2">GCP VM Deployment</h3>
-                        <p class="text-slate-600 mb-4">Created a Python automation script leveraging the Google Cloud API to provision Compute Engine VMs, install Apache, and deploy a “Hello World” webpage—streamlining infrastructure-as-code workflows.</p>
+                        <p class="text-[#C9D1D9] mb-4">Created a Python automation script leveraging the Google Cloud API to provision Compute Engine VMs, install Apache, and deploy a “Hello World” webpage—streamlining infrastructure-as-code workflows.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">GCP API</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Compute Engine API</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">GCP API</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Compute Engine API</span>
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/SherazHussain546/GoExploree" target="_blank" class="project-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 block">
+                <a href="https://github.com/SherazHussain546/GoExploree" target="_blank" class="project-card bg-[#122B4D] rounded-lg shadow-lg overflow-hidden transition-all duration-300 block border border-transparent hover:border-teal">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2">GoExploree – Real Estate Mobile App</h3>
-                        <p class="text-slate-600 mb-4">Developed a cross-platform real estate mobile app using Ionic Angular, Capacitor, Firebase Auth, PostgreSQL, and Google Maps integration, enabling 30+ prospective tenants to browse and schedule viewings.</p>
+                        <p class="text-[#C9D1D9] mb-4">Developed a cross-platform real estate mobile app using Ionic Angular, Capacitor, Firebase Auth, PostgreSQL, and Google Maps integration, enabling 30+ prospective tenants to browse and schedule viewings.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Ionic</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Angular</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Capacitor</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">PostgreSQL</span>
-                            <span class="bg-yellow-400 text-slate-900 text-xs font-medium px-2.5 py-0.5 rounded-full">Google Maps API</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Ionic</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Angular</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Capacitor</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase Auth</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">PostgreSQL</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Google Maps</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/SherazHussain546/ResumeParser-AI" target="_blank" class="project-card bg-[#122B4D] rounded-lg shadow-lg overflow-hidden transition-all duration-300 block border border-transparent hover:border-teal">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">ResumeParser-AI</h3>
+                        <p class="text-[#C9D1D9] mb-4">A Python-based AI model that parses and categorizes resume content (e.g., skills, experience, education) from PDF files into a structured format, streamlining HR workflows and candidate screening.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">scikit-learn</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Regex</span>
+                            <span class="bg-teal text-[#0A192F] text-xs font-medium px-2.5 py-0.5 rounded-full">Natural Language Processing (NLP)</span>
                         </div>
                     </div>
                 </a>
@@ -218,30 +278,15 @@
         </section>
 
         <section id="technical-experience" class="mb-24 animated-section">
-            <h2 class="text-4xl font-bold text-center mb-12">Technical & E-commerce Experience</h2>
+            <h2 class="text-4xl font-bold text-center mb-12">Technical & E-Commerce Experience</h2>
             <div class="text-center mb-8">
-                <p class="text-lg text-slate-600">This role demonstrates my practical application of web development, digital marketing, and e-commerce technology.</p>
+                <p class="text-lg text-[#C9D1D9]">A timeline of my professional journey, highlighting key technical and business achievements.</p>
             </div>
-            <div class="max-w-4xl mx-auto">
-                <div class="info-card animated-section bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-2xl font-bold mb-2">E-Commerce Manager | Luxe Threads</h3>
-                    <p class="text-slate-500 font-medium">May 2024 – Jan 2025</p>
-                    <ul class="list-disc list-inside text-slate-600 mt-4 space-y-1">
-                        <li>Launched and managed an online fashion brand on WordPress/WooCommerce with custom HTML/CSS, integrating Stripe and PayPal for seamless checkout.</li>
-                        <li>Executed SEO and Google Ads campaigns that increased organic traffic by 50% and lifted conversion rates by 25%.</li>
-                        <li>Architected marketing funnels—email automation, social media, and influencer partnerships—growing subscriber lists by 45% and driving consistent monthly sales.</li>
-                    </ul>
+            <div class="relative max-w-4xl mx-auto px-4 md:px-0">
+                <div class="timeline-line hidden md:block">
+                    <div id="timeline-line-fill" class="timeline-line-fill"></div>
                 </div>
-            </div>
-            <br>
-            <div class="max-w-4xl mx-auto">
-                <div class="info-card animated-section bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-2xl font-bold mb-2">Peer Mentor | Dublin Business School</h3>
-                    <p class="text-slate-500 font-medium">Sep 2022 – May 2023</p>
-                    <ul class="list-disc list-inside text-slate-600 mt-4 space-y-1">
-                        <li>Mentored 20+ students each semester on study techniques, project work, and professional development.</li>
-                        <li>Honored with the Student Leader Award (Peer Mentor with Distinction) for exceptional leadership and support.</li>
-                    </ul>
+                <div id="timeline-container" class="space-y-12">
                 </div>
             </div>
         </section>
@@ -249,424 +294,391 @@
         <section id="other-experience" class="mb-24 animated-section">
             <h2 class="text-4xl font-bold text-center mb-12">Other Professional Experience</h2>
             <div class="text-center mb-8">
-                <p class="text-lg text-slate-600">My experience in retail management and peer mentorship showcases strong leadership, problem-solving, and communication skills.</p>
+                <p class="text-lg text-[#C9D1D9]">My retail and peer mentoring experience has honed valuable leadership, communication, and business skills.</p>
             </div>
-            <div class="max-w-4xl mx-auto relative pl-10 md:pl-12">
-                <div class="timeline-line"><div id="timeline-fill" class="timeline-line-fill"></div></div>
-                <div class="timeline-item mb-12">
-                    <div class="absolute -left-2.5 w-5 h-5 bg-yellow-400 rounded-full mt-1.5 transform -translate-x-1/2"></div>
-                    <div class="ml-6">
-                        <h4 class="text-xl font-bold">Deputy Manager | Castore</h4>
-                        <p class="text-slate-500 mb-2">Apr 2024 – Present</p>
-                        <ul class="list-disc list-inside text-slate-600 space-y-1">
-                            <li>Lead and mentor a team of 12+ staff, driving a 55% increase in monthly sales targets.</li>
-                            <li>Designed and implemented an inventory management system, reducing stock discrepancies by 30%.</li>
-                            <li>Developed and delivered customer-service training, boosting satisfaction scores by 70%.</li>
-                        </ul>
-                    </div>
+            <div id="other-experience-container" class="relative max-w-4xl mx-auto px-4 md:px-0">
+                <div class="timeline-line hidden md:block">
+                    <div id="timeline-line-fill-other" class="timeline-line-fill"></div>
                 </div>
-                <div class="timeline-item mb-12">
-                    <div class="absolute -left-2.5 w-5 h-5 bg-yellow-400 rounded-full mt-1.5 transform -translate-x-1/2"></div>
-                    <div class="ml-6">
-                        <h4 class="text-xl font-bold">Retail Supervisor | Castore</h4>
-                        <p class="text-slate-500 mb-2">Feb 2024 – Apr 2024</p>
-                        <ul class="list-disc list-inside text-slate-600 space-y-1">
-                            <li>Oversaw daily store operations, including staff scheduling and visual merchandising.</li>
-                            <li>Onboarded and coached new hires, achieving a 95% team competency rate within the first month.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item mb-12">
-                    <div class="absolute -left-2.5 w-5 h-5 bg-yellow-400 rounded-full mt-1.5 transform -translate-x-1/2"></div>
-                    <div class="ml-6">
-                        <h4 class="text-xl font-bold">Retail Supervisor | Reiss</h4>
-                        <p class="text-slate-500 mb-2">Jun 2023 – Feb 2024</p>
-                        <ul class="list-disc list-inside text-slate-600 space-y-1">
-                            <li>Managed a sales floor team of 13+, implementing visual merchandising that elevated team sales by 32%.</li>
-                            <li>Led product training workshops, reducing customer inquiries by 20% and streamlining service delivery.</li>
-                        </ul>
-                    </div>
+                <div id="other-experience-timeline-container" class="space-y-12">
                 </div>
             </div>
         </section>
-
+        
         <section id="education" class="mb-24 animated-section">
-            <h2 class="text-4xl font-bold text-center mb-12">Education & Certifications</h2>
-            <div class="text-center mb-8">
-                <p class="text-lg text-slate-600">My formal education is complemented by continuous learning and industry-recognized certifications.</p>
-            </div>
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-                <div class="info-card animated-section bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-2xl font-bold mb-2">Bachelor of Science in Computing</h3>
-                    <p class="text-slate-600 font-medium">First Class Honors</p>
-                    <p class="text-slate-500">Dublin Business School | 2021 – 2025</p>
-                </div>
-                <div class="info-card animated-section bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-2xl font-bold mb-2">Certifications</h3>
-                    <ul class="list-disc list-inside text-slate-600 space-y-1">
-                        <li>Mastercard Cybersecurity Job Simulation | Forage</li>
-                        <li>Google Ads AI-Powered Performance Certification | Google</li>
-                        <li>Google AdSense Certification | Google</li>
-                        <li>Graduate Work Readiness (Bronze, Silver & Gold) | Dublin Business School</li>
-                        <li>Duolingo English Test</li>
-                        <li>Introduction to Virtual, Augmented & Mixed Reality | FutureLearn</li>
-                    </ul>
-                </div>
+            <h2 class="text-4xl font-bold text-center mb-12">Education</h2>
+            <div id="education-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             </div>
         </section>
 
         <section id="contact" class="mb-24 animated-section">
-            <h2 class="text-4xl font-bold text-center mb-12">Get In Touch</h2>
-            <div class="text-center mb-8">
-                <p class="text-lg text-slate-600">I'm actively seeking a challenging role and would love to hear from you. Feel free to connect via email!</p>
-            </div>
-            <div class="max-w-xl mx-auto p-8 bg-white rounded-lg shadow-xl text-center animated-section">
-                <div class="flex items-center justify-center space-x-4 mb-6 text-slate-600">
-                    <i class="fas fa-envelope text-xl text-yellow-400"></i>
-                    <p>sherazhussainofficial1@gmail.com</p>
+            <h2 class="text-4xl font-bold text-center mb-12">Contact</h2>
+            <div class="text-center">
+                <p class="text-lg text-[#C9D1D9] mb-8 max-w-2xl mx-auto">I am actively seeking roles in Software, Cloud, or DevOps Engineering. Feel free to connect with me to discuss opportunities or collaborate on a project.</p>
+                <div class="flex flex-wrap justify-center items-center gap-6">
+                    <a href="mailto:sherazhussainofficial1@gmail.com" class="btn-teal py-3 px-6 rounded-full font-bold transition-all duration-300 border">Email</a>
+                    <a href="https://linkedin.com/in/sherazhussain546" target="_blank" class="btn-teal py-3 px-6 rounded-full font-bold transition-all duration-300 border">LinkedIn</a>
+                    <a href="tel:+353830682026" class="btn-teal py-3 px-6 rounded-full font-bold transition-all duration-300 border">Call</a>
                 </div>
-                <!-- Interactive button to open email client -->
-                <a href="mailto:sherazhussainofficial1@gmail.com?subject=Portfolio%20Enquiry" class="inline-block w-full sm:w-auto bg-yellow-400 text-slate-900 py-3 px-8 rounded-lg font-bold hover:bg-yellow-500 transition-colors duration-300 shadow-md">
-                    Email Me
-                </a>
-            </div>
-        </section>
-
-        <section id="ai-tools" class="mb-24 animated-section">
-            <h2 class="text-4xl font-bold text-center mb-12">AI Career Tools</h2>
-            <div class="text-center mb-8">
-                <p class="text-lg text-slate-600">Use these generative AI tools to help with your job applications.</p>
-            </div>
-            <div class="max-w-4xl mx-auto">
-                <button id="open-cover-letter-modal" class="w-full bg-yellow-400 text-slate-900 py-4 px-8 rounded-lg font-bold hover:bg-yellow-500 transition-colors duration-300 shadow-md">
-                    ✨ Generate a Cover Letter
-                </button>
             </div>
         </section>
 
     </main>
 
-    <!-- Modal for cover letter generator -->
-    <div id="cover-letter-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-[100] hidden">
-        <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-2xl font-bold text-slate-900">✨ Generate a Cover Letter</h3>
-                <button id="close-cover-letter-modal" class="text-slate-400 hover:text-slate-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                </button>
-            </div>
-            <p class="text-slate-600 mb-4">Paste a job description below, and I will generate a personalized cover letter for you based on your resume content.</p>
-            <textarea id="job-description-input" class="w-full h-40 p-4 border border-slate-300 rounded-lg bg-slate-50 text-slate-900 focus:outline-none focus:ring-2 focus:ring-yellow-400 mb-4" placeholder="Paste the job description here..."></textarea>
-            <button id="generate-cover-letter-btn" class="w-full bg-yellow-400 text-slate-900 py-3 px-8 rounded-lg font-bold hover:bg-yellow-500 transition-colors duration-300 shadow-md">
-                Generate
-            </button>
-            <div id="cover-letter-output-container" class="mt-6 hidden">
-                <h4 class="text-xl font-bold text-slate-900 mb-2">Your Cover Letter:</h4>
-                <div id="cover-letter-output" class="bg-slate-50 text-slate-900 p-4 rounded-lg border border-slate-300 whitespace-pre-wrap"></div>
-                <button id="copy-cover-letter-btn" class="mt-4 bg-yellow-400 text-slate-900 py-2 px-4 rounded-lg font-bold hover:bg-yellow-500 transition-colors duration-300">
-                    Copy to Clipboard
-                </button>
-            </div>
-            <div id="loading-indicator-cover-letter" class="hidden text-center mt-4 text-yellow-400">
-                <div class="animate-spin inline-block w-8 h-8 border-4 border-yellow-400 border-t-transparent rounded-full"></div>
-                <p class="mt-2">Generating your cover letter...</p>
-            </div>
-            <div id="cover-letter-error-message" class="hidden text-center mt-4 text-red-500">
-                <p>An error occurred. Please try again.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal for summary critique -->
-    <div id="critique-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-[100] hidden">
-        <div class="bg-white rounded-lg shadow-xl p-8 max-w-xl w-full max-h-[90vh] overflow-y-auto">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-2xl font-bold text-slate-900">✨ Summary Critique</h3>
-                <button id="close-critique-modal" class="text-slate-400 hover:text-slate-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                </button>
-            </div>
-            <div id="critique-output-container">
-                <h4 class="text-xl font-bold text-slate-900 mb-2">Critique of your summary:</h4>
-                <div id="critique-output" class="bg-slate-50 text-slate-900 p-4 rounded-lg border border-slate-300 whitespace-pre-wrap"></div>
-            </div>
-            <div id="loading-indicator-critique" class="hidden text-center mt-4 text-yellow-400">
-                <div class="animate-spin inline-block w-8 h-8 border-4 border-yellow-400 border-t-transparent rounded-full"></div>
-                <p class="mt-2">Analyzing your summary...</p>
-            </div>
-            <div id="critique-error-message" class="hidden text-center mt-4 text-red-500">
-                <p>An error occurred. Please try again.</p>
-            </div>
-        </div>
-    </div>
-
-    <footer class="bg-slate-900 text-white py-8 text-center">
-        <p>&copy; 2025 Sheraz Hussain. All rights reserved.</p>
+    <footer class="text-center py-6 text-[#C9D1D9] text-sm">
+        <p>Built with ❤️ and Code by Sheraz Hussain</p>
     </footer>
-
+    
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Mobile navigation toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuButton.addEventListener('click', function () {
-                mobileMenu.classList.toggle('hidden');
-            });
-            
-            // Smooth scrolling for navigation links
-            const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
-            smoothScrollLinks.forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
+        const skillsData = [
+            { name: "Python", category: "Programming" },
+            { name: "TypeScript", category: "Programming" },
+            { name: "JavaScript", category: "Programming" },
+            { name: "C#", category: "Programming" },
+            { name: "SQL", category: "Programming" },
+            { name: "Angular", category: "Frameworks" },
+            { name: "Ionic", category: "Frameworks" },
+            { name: "Express", category: "Frameworks" },
+            { name: "scikit-learn", category: "Frameworks" },
+            { name: "React.js", category: "Frameworks" },
+            { name: "Node.js", category: "Frameworks" },
+            { name: "FastAPI", category: "Frameworks" },
+            { name: "Django", category: "Frameworks" },
+            { name: "Flask", category: "Frameworks" },
+            { name: "Bootstrap", category: "Frameworks" },
+            { name: "DevSecOps", category: "Cloud & DevOps" },
+            { name: "CI/CD", category: "Cloud & DevOps" },
+            { name: "GCP", category: "Cloud & DevOps" },
+            { name: "AWS", category: "Cloud & DevOps" },
+            { name: "Docker", category: "Cloud & DevOps" },
+            { name: "Kubernetes", category: "Cloud & DevOps" },
+            { name: "Firebase", category: "Cloud & DevOps" },
+            { name: "GitHub Actions", category: "Cloud & DevOps" },
+            { name: "Terraform", category: "Cloud & DevOps" },
+            { name: "Generative AI", category: "AI & ML" },
+            { name: "AI/ML", category: "AI & ML" },
+            { name: "Prompt Engineering", category: "AI & ML" },
+            { name: "Keyword Extraction", category: "AI & ML" },
+            { name: "OpenAI", category: "AI & ML" },
+            { name: "Google AI Studio", category: "AI & ML" },
+            { name: "MongoDB", category: "Databases" },
+            { name: "PostgreSQL", category: "Databases" },
+            { name: "SQL", category: "Databases" },
+            { name: "Visual Studio Code", category: "Software Development" },
+            { name: "Jira", category: "Software Development" },
+            { name: "Agile Methodologies", category: "Software Development" },
+            { name: "Mobile App Development", category: "Web & Mobile" },
+            { name: "Responsive Web Design", category: "Web & Mobile" },
+            { name: "Frontend Development", category: "Web & Mobile" },
+            { name: "Cybersecurity", category: "Security & Compliance" },
+            { name: "Project Management", category: "Soft Skills" },
+            { name: "Team Leadership", category: "Soft Skills" },
+            { name: "Strategic Planning", category: "Soft Skills" }
+        ];
 
-            // Data for the skills section
-            const skillsData = {
-                'Programming': ['Python', 'C#', 'TypeScript', 'JavaScript', 'SQL'],
-                'Frameworks': ['Angular', 'React.js', 'Node.js', 'Express', 'FastAPI', 'Django', 'Flask', 'Bootstrap', 'Tailwind', 'Material UI', 'Ionic'],
-                'Cloud & DevOps': ['AWS (EC2, S3, Lambda, IAM)', 'Google Cloud Platform (GCP)', 'Firebase', 'Docker', 'Kubernetes', 'Terraform', 'GitHub Actions', 'Azure'],
-                'AI & ML': ['OpenAI', 'Google AI Studio', 'GPT-4', 'scikit-learn', 'Prompt Engineering', 'Keyword Extraction'],
-                'Databases': ['MySQL', 'PostgreSQL', 'MongoDB', 'Firebase Realtime Database', 'BigQuery'],
-                'Web & Mobile': ['HTML5', 'CSS3', 'Tailwind', 'Material UI', 'Capacitor', 'Google Maps API'],
-                'Security & Compliance': ['Penetration Testing', 'Zero Trust Architecture', 'Data Encryption', 'Threat Detection', 'Network Security'],
-                'Software Development': ['Agile', 'REST API', 'Microservices', 'CI/CD Pipelines', 'Serverless Computing'],
-                'E-Commerce & Web Development': ['Shopify', 'WordPress', 'SEO', 'Digital Marketing'],
-                'Soft Skills': ['Leadership', 'Teamwork', 'Problem-solving', 'Attention to Details', 'Communication', 'Time Management']
+        const skillFilters = document.getElementById('skill-filters');
+        const skillsGrid = document.getElementById('skills-grid');
+        const skillsChartCtx = document.getElementById('skillsChart').getContext('2d');
+        let skillsChart;
+        
+        const experienceData = [
+             {
+                title: "Deputy Manager | Castore",
+                period: "June 2024 - Present",
+                location: "Dublin, Ireland",
+                details: [
+                    "Spearheaded daily team operations and coaching for a staff of 12+, driving a 55% increase in monthly sales targets and enhancing team performance by 32% within 6 months.",
+                    "Engineered and deployed a data-driven inventory management system with real-time analytics, which reduced stock discrepancies by 30% and improved turnover efficiency.",
+                    "Championed a customer-first service culture, leading to a 70% increase in customer satisfaction scores and a notable increase in repeat business.",
+                    "Collaborated with the IT department to develop a customer feedback portal, surfacing actionable insights that elevated the Net Promoter Score (NPS) by 38%."
+                ]
+            },
+            {
+                title: "E-Commerce Manager | Luxe Threads",
+                period: "May 2024 - January 2025",
+                location: "Dublin, Ireland",
+                details: [
+                    "Launched and managed an online fashion brand on WordPress/WooCommerce, building the custom storefront with HTML and CSS.",
+                    "Executed targeted SEO and Google Ads campaigns that increased organic traffic by 50% and conversion rates by 25%.",
+                    "Architected marketing funnels and influencer partnerships, growing subscriber lists by 45% and driving consistent monthly sales.",
+                    "Gained end-to-end product management and digital business experience from market analysis to final product deployment and sales."
+                ]
+            }
+        ];
+
+        const otherExperienceData = [
+            {
+                title: "Retail Supervisor | Reiss",
+                period: "June 2023 - February 2024",
+                location: "Dublin, Ireland",
+                details: [
+                    "Managed a sales floor team of 13+, implementing visual merchandising and staff coaching that elevated team sales by 32%.",
+                    "Led product training workshops, reducing customer inquiries by 20% and streamlining service delivery.",
+                    "Maintained key relationships with high-value clients, leading to a 15% increase in VIP customer retention."
+                ]
+            },
+            {
+                title: "Retail Sales Associate | Brown Thomas Arnotts",
+                period: "July 2022 - January 2024",
+                location: "Dublin, Ireland",
+                details: [
+                    "Advised customers on products and styling, consistently meeting and exceeding monthly sales targets.",
+                    "Processed transactions and handled customer inquiries, ensuring a high-quality shopping experience.",
+                    "Supported team members in achieving store goals and maintaining visual standards."
+                ]
+            },
+            {
+                title: "Peer Mentor | Dublin Business School",
+                period: "September 2022 - May 2023",
+                location: "Dublin, Ireland",
+                details: [
+                    "Mentored 20+ students each semester on study techniques, project work, and professional development.",
+                    "Honored with the Student Leader Award (Peer Mentor with Distinction) for exceptional leadership and support."
+                ]
+            }
+        ];
+
+        const educationData = [
+            {
+                title: "Dublin Business School",
+                degree: "Bachelor of Science - BSc, Computing",
+                period: "September 2021 - April 2025",
+                gpa: "First Class Honours"
+            },
+            {
+                title: "Vision IT",
+                degree: "Web Development",
+                period: "June 2021 - August 2021"
+            },
+            {
+                title: "Yousuf's Institute of English Language",
+                degree: "AEO, IELTS",
+                period: "January 2019 - April 2020"
+            }
+        ];
+
+        function renderSkills(category) {
+            const filteredSkills = category === 'all' ? skillsData : skillsData.filter(skill => skill.category === category);
+            skillsGrid.innerHTML = filteredSkills.map(skill => `
+                <div class="flex flex-col items-center p-4 rounded-lg bg-[#122B4D] border border-teal transition-all duration-300 hover:bg-[#1C3660]">
+                    <p class="text-sm font-medium text-[#C9D1D9]">${skill.name}</p>
+                </div>
+            `).join('');
+        }
+
+        function renderSkillsChart() {
+            const categoryLabels = ["Programming", "Frameworks", "Cloud & DevOps", "AI & ML", "Databases", "Web & Mobile", "Security & Compliance", "Software Development", "E-Commerce & Web Development", "Soft Skills"];
+            const categoryCounts = categoryLabels.map(cat => skillsData.filter(skill => skill.category === cat).length);
+            const total = categoryCounts.reduce((sum, count) => sum + count, 0);
+            const percentageData = categoryCounts.map(count => Math.round((count / total) * 100));
+
+            const data = {
+                labels: categoryLabels,
+                datasets: [{
+                    label: 'Skill Distribution',
+                    data: percentageData,
+                    backgroundColor: [
+                        '#64FFDA',
+                        '#48C3AE',
+                        '#2A8E7D',
+                        '#1F6A5D',
+                        '#164D43',
+                        '#0D352B',
+                        '#051D14',
+                        '#0A192F',
+                        '#1C3660',
+                        '#3E5991'
+                    ],
+                    borderColor: '#0A192F',
+                    borderWidth: 2
+                }]
             };
 
-            const skillsGrid = document.getElementById('skills-grid');
-            const filterButtons = document.querySelectorAll('.skill-filter-btn');
-
-            // Function to display skills based on the selected category
-            function displaySkills(category) {
-                skillsGrid.innerHTML = '';
-                const skillsToShow = category === 'all' 
-                    ? Object.values(skillsData).flat()
-                    : skillsData[category];
-
-                skillsToShow.forEach(skill => {
-                    const skillEl = document.createElement('div');
-                    skillEl.className = 'bg-slate-200 p-4 rounded-lg shadow-sm';
-                    skillEl.textContent = skill;
-                    skillsGrid.appendChild(skillEl);
-                });
-            }
-
-            // Event listeners for skill filter buttons
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const category = button.dataset.category;
-                    filterButtons.forEach(btn => {
-                        btn.classList.remove('bg-yellow-400', 'text-slate-900');
-                        btn.classList.add('bg-slate-200', 'text-slate-700');
-                    });
-                    button.classList.add('bg-yellow-400', 'text-slate-900');
-                    button.classList.remove('bg-slate-200', 'text-slate-700');
-                    displaySkills(category);
-                });
-            });
-
-            // Display all skills by default on page load
-            displaySkills('all');
-
-            // Initialize the radar chart for skills
-            const ctx = document.getElementById('skillsChart').getContext('2d');
-            new Chart(ctx, {
-                type: 'radar',
-                data: {
-                    labels: ['Full-Stack Dev', 'Cloud Architecture', 'DevOps', 'AI/ML', 'Databases'],
-                    datasets: [{
-                        label: 'Proficiency',
-                        data: [90, 85, 80, 88, 82],
-                        backgroundColor: 'rgba(250, 204, 21, 0.2)', /* Changed from blue */
-                        borderColor: 'rgba(250, 204, 21, 1)', /* Changed from blue */
-                        pointBackgroundColor: 'rgba(250, 204, 21, 1)', /* Changed from blue */
-                        pointBorderColor: '#fff',
-                        pointHoverBackgroundColor: '#fff',
-                        pointHoverBorderColor: 'rgba(250, 204, 21, 1)' /* Changed from blue */
-                    }]
-                },
-                options: {
-                    maintainAspectRatio: false,
-                    scales: {
-                        r: {
-                            angleLines: {
-                                color: '#e2e8f0'
-                            },
-                            grid: {
-                                color: '#e2e8f0'
-                            },
-                            pointLabels: {
-                                font: {
-                                    size: 14,
-                                    weight: 'bold'
-                                },
-                                color: '#1e293b'
-                            },
-                            ticks: {
-                                backdropColor: 'transparent',
-                                color: '#1e293b'
+            const options = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            color: '#E6F1FF',
+                            font: {
+                                family: "'Inter', sans-serif"
                             }
                         }
                     },
-                    plugins: {
-                        legend: {
-                            display: false
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            }
                         }
                     }
                 }
-            });
+            };
             
-            // Logic for scroll-based animations
-            const animatedSections = document.querySelectorAll('.animated-section');
-            const timelineItems = document.querySelectorAll('.timeline-item');
-            const timelineLineFill = document.getElementById('timeline-fill');
+            if (skillsChart) {
+                skillsChart.destroy();
+            }
+            skillsChart = new Chart(skillsChartCtx, { type: 'doughnut', data: data, options: options });
+        }
 
-            function checkVisibility() {
-                const triggerPoint = window.innerHeight * 0.8;
+        function renderTimeline(data, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = data.map(item => `
+                <div class="relative pl-6 md:pl-12 py-4">
+                    <div class="absolute w-4 h-4 rounded-full bg-teal left-[-8px] md:left-[-16px] top-[1.25rem] border-2 border-[#0A192F]"></div>
+                    <div class="p-6 bg-[#122B4D] rounded-lg shadow-md border border-transparent hover:border-teal transition-all duration-300">
+                        <h3 class="text-xl font-bold text-teal">${item.title}</h3>
+                        <p class="text-sm font-medium text-[#C9D1D9]">${item.period}</p>
+                        <p class="text-sm font-medium text-[#A0A4B3]">${item.location}</p>
+                        <ul class="mt-4 list-disc list-inside space-y-2">
+                            ${item.details.map(detail => `<li>${detail}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function renderEducation(data, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = data.map(item => `
+                <div class="p-6 bg-[#122B4D] rounded-lg shadow-md border border-transparent hover:border-teal transition-all duration-300">
+                    <h3 class="text-xl font-bold text-teal">${item.title}</h3>
+                    <p class="text-[#C9D1D9]">${item.degree}</p>
+                    <p class="text-sm text-[#A0A4B3]">${item.period}</p>
+                    ${item.gpa ? `<p class="text-sm text-[#C9D1D9] mt-2"><strong>Honours:</strong> ${item.gpa}</p>` : ''}
+                </div>
+            `).join('');
+        }
 
-                // Animate sections into view
-                animatedSections.forEach(section => {
-                    const rect = section.getBoundingClientRect();
-                    if (rect.top < triggerPoint) {
-                        section.classList.add('in-view');
+        document.addEventListener('DOMContentLoaded', () => {
+            renderSkills('all');
+            renderSkillsChart();
+            renderTimeline(experienceData, 'timeline-container');
+            renderTimeline(otherExperienceData, 'other-experience-timeline-container');
+            renderEducation(educationData, 'education-container');
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            document.querySelectorAll('.skill-filter-btn').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    document.querySelectorAll('.skill-filter-btn').forEach(btn => {
+                        btn.classList.remove('bg-teal', 'text-white');
+                        btn.classList.add('bg-[#122B4D]', 'text-[#C9D1D9]');
+                    });
+                    e.currentTarget.classList.remove('bg-[#122B4D]', 'text-[#C9D1D9]');
+                    e.currentTarget.classList.add('bg-teal', 'text-white');
+                    renderSkills(e.currentTarget.dataset.category);
+                });
+            });
+
+            const sections = document.querySelectorAll('.animated-section');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        if (entry.target.id === 'technical-experience') {
+                             animateTimeline('timeline-line-fill', 'timeline-container');
+                        }
+                        if (entry.target.id === 'other-experience') {
+                            animateTimeline('timeline-line-fill-other', 'other-experience-timeline-container');
+                        }
                     }
                 });
+            }, observerOptions);
 
-                // Animate timeline items and line
-                if (timelineItems.length > 0) {
-                    const firstItem = timelineItems[0];
-                    const firstItemRect = firstItem.getBoundingClientRect();
-                    const lastItem = timelineItems[timelineItems.length - 1];
-                    const lastItemRect = lastItem.getBoundingClientRect();
-                    
-                    const timelineHeight = lastItemRect.bottom - firstItemRect.top;
-                    const scrolledPast = Math.max(0, -firstItemRect.top);
-                    const fillPercentage = Math.min((scrolledPast / (timelineHeight - window.innerHeight * 0.2)) * 100, 100);
-                    
-                    timelineLineFill.style.height = `${fillPercentage}%`;
+            sections.forEach(section => observer.observe(section));
 
-                    timelineItems.forEach(item => {
-                        const itemRect = item.getBoundingClientRect();
-                        if (itemRect.top < triggerPoint) {
-                            item.classList.add('in-view');
-                        }
-                    });
+            function animateTimeline(fillId, containerId) {
+                const timelineFill = document.getElementById(fillId);
+                const timelineContainer = document.getElementById(containerId);
+                if (timelineFill && timelineContainer) {
+                    timelineFill.style.height = `${timelineContainer.offsetHeight}px`;
                 }
             }
-
-            // Listen for scroll events and run the visibility check
-            window.addEventListener('scroll', checkVisibility);
-            window.addEventListener('resize', checkVisibility);
-            checkVisibility(); // Initial check on page load
-
-            // --- Gemini API Integrations ---
-
-            const coverLetterModal = document.getElementById('cover-letter-modal');
-            const critiqueModal = document.getElementById('critique-modal');
-
-            // Function to show a modal
-            function showModal(modal) {
-                modal.classList.remove('hidden');
-                modal.classList.add('flex');
-            }
-
-            // Function to hide a modal
-            function hideModal(modal) {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-            }
-
-            // Event listeners for opening and closing modals
-            document.getElementById('open-cover-letter-modal').addEventListener('click', () => showModal(coverLetterModal));
-            document.getElementById('close-cover-letter-modal').addEventListener('click', () => {
-                hideModal(coverLetterModal);
-                document.getElementById('cover-letter-output-container').classList.add('hidden');
+            window.addEventListener('resize', () => {
+                if (document.getElementById('technical-experience').classList.contains('in-view')) {
+                     animateTimeline('timeline-line-fill', 'timeline-container');
+                }
+                if (document.getElementById('other-experience').classList.contains('in-view')) {
+                     animateTimeline('timeline-line-fill-other', 'other-experience-timeline-container');
+                }
             });
-            document.getElementById('critique-summary-btn').addEventListener('click', async () => {
-                showModal(critiqueModal);
-                await getSummaryCritique();
-            });
-            document.getElementById('close-critique-modal').addEventListener('click', () => hideModal(critiqueModal));
 
-            // Function to extract full resume content from the page
-            function getResumeContent() {
-                const sections = document.querySelectorAll('main section');
-                let resumeText = '';
-                sections.forEach(section => {
-                    // Exclude the new AI tools section from the resume content
-                    if (section.id !== 'ai-tools' && section.id !== 'hero') {
-                        resumeText += section.innerText + '\n\n';
-                    }
-                });
-                return resumeText.trim();
-            }
+            const critiqueBtn = document.getElementById('critique-btn');
+            const summaryText = document.getElementById('summary-text');
+            const critiqueOutput = document.getElementById('critique-output');
+            const critiqueSection = document.getElementById('ai-critique');
+            const loadingIndicator = document.getElementById('loading-indicator-critique');
+            const errorMessage = document.getElementById('error-message-critique');
 
-            // Function to handle exponential backoff for API calls
+            // Exponential backoff for API calls
             async function fetchWithBackoff(url, options, retries = 3, delay = 1000) {
-                for (let i = 0; i < retries; i++) {
-                    try {
-                        const response = await fetch(url, options);
-                        if (!response.ok) {
-                            throw new Error(`HTTP error! status: ${response.status}`);
-                        }
-                        return await response.json();
-                    } catch (error) {
-                        console.error(`Attempt ${i + 1} failed: ${error.message}`);
-                        if (i < retries - 1) {
+                try {
+                    const response = await fetch(url, options);
+                    if (!response.ok) {
+                        if (response.status === 429 && retries > 0) {
+                            console.warn(`Rate limit exceeded. Retrying in ${delay / 1000}s...`);
                             await new Promise(res => setTimeout(res, delay));
-                            delay *= 2; // Exponentially increase delay
-                        } else {
-                            throw error;
+                            return fetchWithBackoff(url, options, retries - 1, delay * 2);
                         }
+                        throw new Error(`API call failed with status: ${response.status}`);
                     }
+                    return response.json();
+                } catch (error) {
+                    if (retries > 0) {
+                        console.warn(`Fetch failed. Retrying in ${delay / 1000}s...`);
+                        await new Promise(res => setTimeout(res, delay));
+                        return fetchWithBackoff(url, options, retries - 1, delay * 2);
+                    }
+                    throw error;
                 }
             }
 
-            // Generate cover letter function
-            document.getElementById('generate-cover-letter-btn').addEventListener('click', async function() {
-                const jobDescription = document.getElementById('job-description-input').value.trim();
-                const outputDiv = document.getElementById('cover-letter-output');
-                const outputContainer = document.getElementById('cover-letter-output-container');
-                const loadingIndicator = document.getElementById('loading-indicator-cover-letter');
-                const errorMessage = document.getElementById('cover-letter-error-message');
-
-                // If job description is empty, show an error message in the modal instead of an alert
-                if (!jobDescription) {
-                    errorMessage.textContent = 'Please enter a job description to generate a cover letter.';
-                    errorMessage.classList.remove('hidden');
-                    return;
-                }
-
-                outputContainer.classList.add('hidden');
+            critiqueBtn.addEventListener('click', async () => {
+                const summaryContent = summaryText.textContent.trim();
+                critiqueOutput.textContent = '';
                 errorMessage.classList.add('hidden');
                 loadingIndicator.classList.remove('hidden');
+                critiqueSection.classList.remove('hidden');
 
-                const summaryText = document.getElementById('summary-text').textContent;
-                const resumeContent = summaryText + '\n\n' + getResumeContent();
+                const prompt = `You are an experienced career coach and resume expert. I will provide you with a professional summary from a software engineer's portfolio website. Your task is to provide a detailed and constructive critique. Focus on the following points in your feedback:
+1.  Strengths: What aspects of the summary are strong and professional?
+2.  Areas for Improvement: What specific parts could be made stronger? Suggest concrete, actionable changes.
+3.  Action-Oriented Language: Critique the use of passive vs. active verbs. Suggest more powerful alternatives.
+4.  Quantifiable Achievements: Point out where specific metrics or numbers could be added to make the accomplishments more impactful.
+5.  Overall Impression: Give a final summary of the impression the summary would make on a recruiter.
 
-                const prompt = `Based on the following resume and job description, write a professional and engaging cover letter.
-                
-                My Resume:
-                ${resumeContent}
-                
-                Job Description:
-                ${jobDescription}
-                
-                Cover Letter:`;
-                
+The critique should be formatted in Markdown using bolding for titles and lists for points. The tone should be professional, encouraging, and helpful.
+
+Here is the professional summary:
+"${summaryContent}"
+
+Critique:`;
+
                 try {
                     let chatHistory = [];
                     chatHistory.push({ role: "user", parts: [{ text: prompt }] });
                     const payload = { contents: chatHistory };
-                    const apiKey = "" 
+                    const apiKey = "";
                     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
                     
                     const result = await fetchWithBackoff(apiUrl, {
@@ -677,71 +689,7 @@
                     
                     const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
                     if (text) {
-                        outputDiv.textContent = text;
-                        outputContainer.classList.remove('hidden');
-                    } else {
-                        throw new Error('API response did not contain text content.');
-                    }
-                } catch (error) {
-                    console.error("Failed to generate cover letter:", error);
-                    errorMessage.classList.remove('hidden');
-                    errorMessage.textContent = 'An error occurred. Please try again.';
-                } finally {
-                    loadingIndicator.classList.add('hidden');
-                }
-            });
-
-            // Copy to clipboard function
-            document.getElementById('copy-cover-letter-btn').addEventListener('click', function() {
-                const textToCopy = document.getElementById('cover-letter-output').textContent;
-                const textarea = document.createElement('textarea');
-                textarea.value = textToCopy;
-                document.body.appendChild(textarea);
-                textarea.select();
-                try {
-                    document.execCommand('copy');
-                    this.textContent = 'Copied!';
-                } catch (err) {
-                    console.error('Failed to copy text: ', err);
-                }
-                document.body.removeChild(textarea);
-                setTimeout(() => this.textContent = 'Copy to Clipboard', 2000);
-            });
-
-            // Summary critique function
-            async function getSummaryCritique() {
-                const summaryText = document.getElementById('summary-text').textContent;
-                const outputDiv = document.getElementById('critique-output');
-                const loadingIndicator = document.getElementById('loading-indicator-critique');
-                const errorMessage = document.getElementById('critique-error-message');
-
-                outputDiv.textContent = '';
-                errorMessage.classList.add('hidden');
-                loadingIndicator.classList.remove('hidden');
-
-                const prompt = `You are a career coach. Please provide a professional critique of the following resume summary. Focus on its clarity, impact, conciseness, and effectiveness for a graduate software engineering role. Provide actionable feedback and suggestions for improvement.
-                
-                Resume Summary:
-                ${summaryText}
-                
-                Critique:`;
-                
-                try {
-                    let chatHistory = [];
-                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-                    const payload = { contents: chatHistory };
-                    const apiKey = "" 
-                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-                    
-                    const result = await fetchWithBackoff(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-                    
-                    const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
-                    if (text) {
-                        outputDiv.textContent = text;
+                        critiqueOutput.textContent = text;
                     } else {
                         throw new Error('API response did not contain text content.');
                     }
@@ -751,7 +699,7 @@
                 } finally {
                     loadingIndicator.classList.add('hidden');
                 }
-            }
+            });
         });
     </script>
 </body>
